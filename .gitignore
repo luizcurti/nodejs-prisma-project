@@ -3,3 +3,4 @@ dist
 .env
 .qodo
 yarn.lock
+.DS_Store
