@@ -70,13 +70,13 @@ This will run the tests configured with Jest.
 ## Project Structure
 * .
 * ├── src/
-* │   ├── controllers/    # Contains the controllers for the application (business logic)
-* │   ├── models/         # Database models (Prisma definitions)
-* │   ├── routes/         # API route definitions
-* │   ├── services/       # Service logic (functions related to database interaction)
-* │   └── middlewares/    # Middlewares (e.g., authentication)
+* │── ├── controllers/    # Contains the controllers for the application (business logic)
+* │── ├── models/         # Database models (Prisma definitions)
+* │── ├── routes/         # API route definitions
+* │── ├── services/       # Service logic (functions related to database interaction)
+* │── └── middlewares/    # Middlewares (e.g., authentication)
 * ├── prisma/             # Files related to Prisma (schema, migrations)
-* │   ├── schema.prisma   # Database schema definition
+* │── ├── schema.prisma   # Database schema definition
 * ├── .env                # Environment variable file
 * ├── package.json        # Project's package manager and dependencies
 * ├── README.md           # This file
