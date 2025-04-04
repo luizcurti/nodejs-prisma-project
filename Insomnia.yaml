@@ -1,0 +1,268 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1703787815646
+  modified: 1703787815646
+collection:
+  - name: My Folder
+    meta:
+      id: fld_b53bdadfbf1d4a49be43a62d2ced14dd
+      created: 1743759778545
+      modified: 1743759778545
+      sortKey: -1743759778545
+    children:
+      - url: http://localhost:3000/client
+        name: Create Client
+        meta:
+          id: req_c02fb0344de4406d9434adbfa694b235
+          created: 1640130017714
+          modified: 1743764536528
+          isPrivate: false
+          sortKey: -1743759789062
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "username": "client_username",
+              "password": "123456"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/client/authenticate
+        name: Auth Client
+        meta:
+          id: req_1243e4f6516b47208eabf43a23dde95e
+          created: 1640204741711
+          modified: 1743764540341
+          isPrivate: false
+          sortKey: -1743759789012
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "username": "client_username",
+              "password": "123456"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/deliveryman
+        name: Create Deliveryman
+        meta:
+          id: req_e8349592d9214542bd4f608be9616715
+          created: 1640206208248
+          modified: 1743767435238
+          isPrivate: false
+          sortKey: -1743759788999.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "username": "deliverymane 2",
+              "password": "123456"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/deliveryman/authenticate
+        name: Auth Deliveryman
+        meta:
+          id: req_3561a254fe96449a9771b0791dcac3e0
+          created: 1640206911195
+          modified: 1743764544476
+          isPrivate: false
+          sortKey: -1743759788987
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "username": "deliveryman_username",
+              "password": "123456"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/delivery
+        name: Create Delivery
+        meta:
+          id: req_4c679bfa7fd0467c9fb9f95c9842f671
+          created: 1640462732111
+          modified: 1743766592492
+          isPrivate: false
+          sortKey: -1743759788974.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "item_name": "item 2"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNsaWVudF91c2VybmFtZSIsImlhdCI6MTc0Mzc2NjU2NywiZXhwIjoxNzQzODUyOTY3LCJzdWIiOiJmODM1MDQ1OC04ZWViLTQ2M2MtYjUxNS0xZGViMjJiZTc4YzIifQ.__Ef5Pfe_oIBVbBf4r-lydLKN9m4oROzagJNtp0WEhw
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/delivery/available
+        name: List Available Deliveries
+        meta:
+          id: req_538457ae39ed46bbb50480f4dff926d1
+          created: 1640464092150
+          modified: 1743764898451
+          isPrivate: false
+          sortKey: -1743759788962.7812
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRlbGl2ZXJ5bWFuX3VzZXJuYW1lIiwiaWF0IjoxNzQzNzY0NjQ5LCJleHAiOjE3NDM4NTEwNDksInN1YiI6IjBiYWY4OGQ1LWViMTItNDE0MC05YjUyLTY1YWJlNzdhMGYyZiJ9.ygQTQKHqi2w61nQF6qmJlELuAcPJhzHNu24Ct44LAk0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/delivery/updateDeliveryman/5aab55a8-1ce9-4431-84dc-26e7d58cb1f8?id_deliveryman=f580e29a-8aab-458d-9edd-e0e5e818e255
+        name: Accept Delivery
+        meta:
+          id: req_ca7aa3d91d0346f3b7d019c16fc3a7ef
+          created: 1640465211198
+          modified: 1743768755438
+          isPrivate: false
+          sortKey: -1743759788962
+        method: PUT
+        parameters:
+          - id: pair_76ad768ab146458fa55744669dc67798
+            name: id
+            disabled: true
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRlbGl2ZXJ5bWFuX3VzZXJuYW1lIiwiaWF0IjoxNzQzNzY0NjQ5LCJleHAiOjE3NDM4NTEwNDksInN1YiI6IjBiYWY4OGQ1LWViMTItNDE0MC05YjUyLTY1YWJlNzdhMGYyZiJ9.ygQTQKHqi2w61nQF6qmJlELuAcPJhzHNu24Ct44LAk0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/client/deliveries
+        name: List Deliveries (Client)
+        meta:
+          id: req_2ed043f60d784ed2991d602587447740
+          created: 1640556915398
+          modified: 1743764557237
+          isPrivate: false
+          sortKey: -1743759788965.125
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNsaWVudF91c2VybmFtZSIsImlhdCI6MTc0Mzc2NDQ2MiwiZXhwIjoxNzQzODUwODYyLCJzdWIiOiJmODM1MDQ1OC04ZWViLTQ2M2MtYjUxNS0xZGViMjJiZTc4YzIifQ.PUgsqh_thU6_lpl8Ol1ZgEh_C7JD3lVOodXKpDUdxWU
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/deliveryman/deliveries
+        name: List Deliveries (Deliveryman)
+        meta:
+          id: req_363908f881b9448cb686a4f79f4b1206
+          created: 1640557493521
+          modified: 1743764881145
+          isPrivate: false
+          sortKey: -1743759788963.5625
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRlbGl2ZXJ5bWFuX3VzZXJuYW1lIiwiaWF0IjoxNzQzNzY0NjQ5LCJleHAiOjE3NDM4NTEwNDksInN1YiI6IjBiYWY4OGQ1LWViMTItNDE0MC05YjUyLTY1YWJlNzdhMGYyZiJ9.ygQTQKHqi2w61nQF6qmJlELuAcPJhzHNu24Ct44LAk0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/delivery/updateEndDate/5aab55a8-1ce9-4431-84dc-26e7d58cb1f8
+        name: Update End Date
+        meta:
+          id: req_d7e3812b5b604812894f456a46f8063e
+          created: 1640558048923
+          modified: 1743768768128
+          isPrivate: false
+          sortKey: -1743759788937
+        method: PUT
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRlbGl2ZXJ5bWFuX3VzZXJuYW1lIiwiaWF0IjoxNzQzNzY0NjQ5LCJleHAiOjE3NDM4NTEwNDksInN1YiI6IjBiYWY4OGQ1LWViMTItNDE0MC05YjUyLTY1YWJlNzdhMGYyZiJ9.ygQTQKHqi2w61nQF6qmJlELuAcPJhzHNu24Ct44LAk0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1703787826588
+    modified: 1703787826588
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1703787826586
+    modified: 1703787826586
+    isPrivate: false
